@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+body {
+  font-family: 'Old Standard TT', serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  color: turquoise;
+  padding: 1rem;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-right: 2.3rem;
+  text-align: center;
+}
+
+h3{
+  font-size: 1.3rem;
+  padding: 1rem;
+  margin-right: 2.3rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  padding: 1rem;
+  margin-right: 2rem;
+  text-align: center;
+  line-height: 1.2rem;
+}

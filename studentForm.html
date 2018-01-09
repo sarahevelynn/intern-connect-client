@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="stylesheets/reset.css" />
+  <link rel="stylesheet" href="stylesheets/main.css" />
+  <link rel="stylesheet" href="stylesheets/form.css" />
+  <title>Student Form</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+    <img class="logo" src="assets/logo.png" alt="logo" />
+    </a>
+    <h1 class="title">Student Application Form</h1>
+  </header>
+
+  <main>
+    <div class="instructions">
+      <h2>If you are a motivated, passionate student looking for an internship, apply for a position below.</h2>
+    </div>
+    <div class="form">
+      <form>
+        <label for="contactName">First and Last Name</label>
+        <input id="name" name="name" type="text" />
+        <label for="contactEmail">Email Address</label>
+        <input id="email" name="email" type="text" />
+        <label for="contactPhone">Phone Number</label>
+        <input id="phone" name="phone" type="text" />
+        <label for="contactPreferance">Preferred Method of Contact</label>
+        <input id="pref" name="pref" type="text" />
+        <label for="major">What is your major?</label>
+        <select id="major" name="major">
+           <option value="default" selected>
+             Select an option here</option>
+         </select>
+        <label for="year">Year in School</label>
+        <select id="year" name="year">
+          <option value="default" selected>
+            Select an option here</option>
+        </select>
+        <label for="college">What school do you attend?</label>
+        <select id="college" name="college">
+          <option value="default" selected>
+            Select an option here</option>
+        </select>
+        <label for="payment">What type of internship are you looking for?</label>
+        <select id="payment" name="payment">
+          <option value="default" selected>
+            Select an option here</option>
+        </select>
+        <label for="hours">How many hours are you wanting to work?</label>
+        <select id="hours" name="hours">
+          <option value="default" selected>
+            Select an option here</option>
+        </select>
+        <label for="length">How long do you want your internship to be?</label>
+        <select id="length" name="length">
+          <option value="default" selected>
+            Select an option here</option>
+        </select>
+        <label for="summer">If you enjoy the company you are placed with, are you available for a summer internship? </label>
+        <select id="summer" name= "summer">
+          <option value="default" selected>
+            Select an option here</option>
+        </select>
+        <label for="extraLinks">Any extra links (website, social media, ect.)</label>
+        <input id="extraLinks" name="extraLinks" type="text" />
+        <p class="receivedMessage"></p>
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+
+  </main>
+  <script src="student.js" charset="utf-8"></script>
+</body>
+
+</html>

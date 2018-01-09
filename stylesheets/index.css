@@ -1,0 +1,134 @@
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.student {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DFCC55;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  padding: 1rem;
+  width: 400px;
+  color: black;
+  font-size: 3rem;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #299279;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  padding: 1rem;
+  width: 400px;
+  color: black;
+  font-size: 3rem;
+}
+
+.denver {
+  align-self: center;
+  width: 95%;
+  height: auto;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+}
+
+.meetup {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+
+.meetupLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #006666;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  color: white;
+  font-size: 4rem;
+  padding: 2.3rem;
+  width: 600px;
+  height: auto;
+  text-align: center;
+}
+
+.companyBoard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+
+.pastCompanies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #006666;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  color: white;
+  font-size: 4rem;
+  padding: 2.3rem;
+  width: 600px;
+  height: auto;
+  text-align: center;
+}
+
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+
+.socialLogo {
+  padding: 1rem
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.footer-copy {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 1.7rem;
+  padding: 1rem;
+}

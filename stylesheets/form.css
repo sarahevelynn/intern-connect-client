@@ -1,0 +1,74 @@
+
+.instructions{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.5rem;
+  font-size: 2.5rem;
+
+}
+
+.form{
+  display:flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:1rem;
+  margin:1rem;
+}
+
+
+label, input, select, button {
+    display: block;
+    width: 100%;
+}
+label {
+    font-size: 2rem;
+}
+
+#name, #coName, #email, #phone, #pref, #extraLinks, #website {
+  background-color: #DCDCDC;
+}
+
+
+
+button[type=submit] {
+    background-color: hsl(140, 50%, 50%);
+    transition: all 0.2s;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+    margin-bottom: 2rem;
+}
+input[type=submit]:hover {
+    background-color: hsl(140, 50%, 60%);
+}
+
+.receivedMessage{
+  font-size: 2rem;
+  padding: 1rem;
+  font-style: italic;
+}
+
+input {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+select {
+  font-size: 2rem;
+  background-color: #fff;
+  margin-bottom: 2.5rem;
+
+}
+
+option{
+  margin-bottom: 1rem
+}
