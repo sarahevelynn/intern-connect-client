@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT");
 body {
-  font-family: 'Old Standard TT', serif;
+  font-family: "Old Standard TT", serif;
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
 h1 {
-  font-family: 'Old Standard TT', serif;
+  font-family: "Old Standard TT", serif;
   padding: 0.5rem;
 }
 
 h2 {
-  font-family: 'Old Standard TT', serif;
+  font-family: "Old Standard TT", serif;
   padding: 0.5rem;
 }
 
 p {
-  font-family: 'Old Standard TT', serif;
+  font-family: "Old Standard TT", serif;
 }
 
 a {
   color: purple;
-  font-family: 'Old Standard TT', serif;
+  font-family: "Old Standard TT", serif;
 }
 
 header {
@@ -46,7 +46,7 @@ header {
   font-size: 5rem;
   text-align: center;
   color: #398486;
-  font-family: 'Old Standard TT', serif;
+  font-family: "Old Standard TT", serif;
   display: flex;
   justify-content: flex-start;
   align-items: center;

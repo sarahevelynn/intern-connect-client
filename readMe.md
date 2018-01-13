@@ -17,7 +17,7 @@ You should have a form that writes data to your API
 You should read some data from your API that is dynamically added to the page
 Deploy your front-end
 
-##I am aware there is no test. I wrote my code on the front end and am waiting to do cyprus to be able to test because I was unaware you could only do mocha tests on the back-end, and not on DOM elements. Talked with Kim about submitting as is a re-visiting that later. 
+##I am aware there is no test. I wrote my code on the front end and am waiting to do cyprus to be able to test because I was unaware you could only do mocha tests on the back-end, and not on DOM elements. Talked with Kim about submitting as is a re-visiting that later.
 
 Submission
 Add a link to your front-end code https://github.com/sarahevelynn/intern-connect-client

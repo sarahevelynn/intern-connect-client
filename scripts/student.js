@@ -1,20 +1,16 @@
 var baseURL = "https://intern-connect.herokuapp.com";
-var industry = document.getElementById("industry");
-var age = document.getElementById("age");
-var employeeNumber = document.getElementById("employeeNumber");
-var type = document.getElementById("type");
+var major = document.getElementById("major");
+var year = document.getElementById("year");
+var college = document.getElementById("college");
 var payment = document.getElementById("payment");
 var hours = document.getElementById("hours");
 var length = document.getElementById("length");
 var summer = document.getElementById("summer");
 
-
-
-
-fetch(baseURL + "/company")
+fetch(baseURL + "/students")
   .then(response => response.json())
   .then(response => {
-    var data = response.companyData;
+    var data = response.studentData;
     function filter(param, string) {
       var dataArray = [];
       for (let i = 0; i < data.length; i++) {
@@ -32,10 +28,9 @@ fetch(baseURL + "/company")
         param.appendChild(options);
       }
     }
-    filter(industry, "industry");
-    filter(age, "age");
-    filter(employeeNumber, "employeeNumber");
-    filter(type, "type");
+    filter(major, "major");
+    filter(year, "year");
+    filter(college, "college");
     filter(payment, "payment");
     filter(hours, "hours");
     filter(length, "length");
@@ -47,14 +42,12 @@ document.querySelector("button").addEventListener("click", event => {
   sendData();
 });
 
-
-
 function sendData() {
-  fetch(baseURL + "/company", {
+  fetch(baseURL + "/students", {
     method: "POST",
     body: JSON.stringify(getData()),
     headers: new Headers({
-      "Accept": "application/json",
+      Accept: "application/json",
       "Content-Type": "application/json"
     })
   })
@@ -68,19 +61,23 @@ function sendData() {
 function getData() {
   const data = new FormData(document.querySelector("form"));
   return {
-    companyName: data.get("coName"),
     contactName: data.get("name"),
     contactEmail: data.get("email"),
     contactPhone: data.get("phone"),
     preferredContactMethod: data.get("pref"),
-    websiteLink: data.get("website"),
-    industry: document.querySelector("#industry").options[data.get("industry")].textContent,
-    age: document.querySelector("#age").options[data.get("age")].textContent,
-    employeeNumber: document.querySelector("#employeeNumber").options[data.get("employeeNumber")].textContent,
-    type: document.querySelector("#type").options[data.get("type")].textContent,
-    payment: document.querySelector("#payment").options[data.get("payment")].textContent,
-    hours: document.querySelector("#hours").options[data.get("hours")].textContent,
-    length: document.querySelector("#length").options[data.get("length")].textContent,
-    summer: document.querySelector("#summer").options[data.get("summer")].textContent,
+    major: document.querySelector("#major").options[data.get("major")]
+      .textContent,
+    year: document.querySelector("#year").options[data.get("year")].textContent,
+    college: document.querySelector("#college").options[data.get("college")]
+      .textContent,
+    payment: document.querySelector("#payment").options[data.get("payment")]
+      .textContent,
+    hours: document.querySelector("#hours").options[data.get("hours")]
+      .textContent,
+    length: document.querySelector("#length").options[data.get("length")]
+      .textContent,
+    summer: document.querySelector("#summer").options[data.get("summer")]
+      .textContent,
+    extraLinks: data.get("extraLinks")
   };
 }

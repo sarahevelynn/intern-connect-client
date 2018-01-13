@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT");
 body {
-  font-family: 'Old Standard TT', serif;
+  font-family: "Old Standard TT", serif;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -21,7 +21,7 @@ h2 {
   text-align: center;
 }
 
-h3{
+h3 {
   font-size: 1.3rem;
   padding: 1rem;
   margin-right: 2.3rem;

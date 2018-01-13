@@ -4,15 +4,17 @@ var pulledMajors = [];
 var pulledCoData = [];
 var matchedData = [];
 
-
-
 fetch(baseURL + "/newStudentsData")
   .then(response => response.json())
   .then(response => {
-    for (var i = 0; i < response.length; i++) {
+    for (
+      var newStudentData = 0;
+      newStudentData < response.length;
+      newStudentData++
+    ) {
       var pulledStudentMajors = {};
-      pulledStudentMajors.name = response[i].contactName;
-      pulledStudentMajors.major = response[i].major;
+      pulledStudentMajors.name = response[newStudentData].contactName;
+      pulledStudentMajors.major = response[newStudentData].major;
       pulledMajors.push(pulledStudentMajors);
     }
   })
@@ -21,23 +23,23 @@ fetch(baseURL + "/newStudentsData")
       .then(response => response.json())
       .then(response => {
         var data = response.companyData;
-        for (var i = 0; i < data.length; i++) {
+        for (var companyData = 0; companyData < data.length; companyData++) {
           var pulledCoMajors = {};
-          pulledCoMajors.major = data[i].type;
-          pulledCoMajors.name = data[i].companyName;
-          pulledCoMajors.website = data[i].websiteLink;
-          pulledCoMajors.payment = data[i].payment;
+          pulledCoMajors.major = data[companyData].type;
+          pulledCoMajors.name = data[companyData].companyName;
+          pulledCoMajors.website = data[companyData].websiteLink;
+          pulledCoMajors.payment = data[companyData].payment;
           pulledCoData.push(pulledCoMajors);
         }
         matching(pulledMajors, pulledCoData);
-      }));
-
+      })
+  );
 
 function matching(pulledMajors, pulledCoData) {
-  for (var k = 0; k < pulledCoData.length; k++) {
-    for (var j = 0; j < pulledMajors.length; j++) {
-      if (pulledCoData[k].major === pulledMajors[j].major) {
-        matchedData.push(pulledCoData[k]);
+  for (var CoData = 0; CoData < pulledCoData.length; CoData++) {
+    for (var MajorData = 0; MajorData < pulledMajors.length; MajorData++) {
+      if (pulledCoData[CoData].major === pulledMajors[MajorData].major) {
+        matchedData.push(pulledCoData[CoData]);
       }
     }
   }
@@ -46,34 +48,41 @@ function matching(pulledMajors, pulledCoData) {
   });
 
   function addPosts() {
-    for (var i = 0; i < filteredMatchedData.length; i++) {
+    for (
+      var filteredData = 0;
+      filteredData < filteredMatchedData.length;
+      filteredData++
+    ) {
       var newPosts = document.createElement("div");
-      newPosts.id = i;
+      newPosts.id = filteredData;
 
       var coName = document.createElement("h1");
-      coName.textContent = "Company Name: " + filteredMatchedData[i].name;
+      coName.textContent =
+        "Company Name: " + filteredMatchedData[filteredData].name;
       var x = document.createElement("HR");
       coName.appendChild(x);
       newPosts.appendChild(coName);
 
-
       var coWebsite = document.createElement("a");
-      coWebsite.href = filteredMatchedData[i].website;
-      coWebsite.textContent = "Website: " + filteredMatchedData[i].website;
+      coWebsite.href = filteredMatchedData[filteredData].website;
+      coWebsite.textContent =
+        "Website: " + filteredMatchedData[filteredData].website;
       var y = document.createElement("HR");
       y.classList.add("smaller");
       coWebsite.appendChild(y);
       newPosts.appendChild(coWebsite);
 
       var internType = document.createElement("p");
-      internType.textContent = "Intern Wanted: " + filteredMatchedData[i].major;
+      internType.textContent =
+        "Intern Wanted: " + filteredMatchedData[filteredData].major;
       var z = document.createElement("HR");
       z.classList.add("smaller");
       internType.appendChild(z);
       newPosts.appendChild(internType);
 
       var payment = document.createElement("p");
-      payment.textContent = "Paid or for Credit: " + filteredMatchedData[i].payment;
+      payment.textContent =
+        "Paid or for Credit: " + filteredMatchedData[filteredData].payment;
       var q = document.createElement("HR");
       q.classList.add("smaller");
       payment.appendChild(q);
