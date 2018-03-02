@@ -1,5 +1,8 @@
 # InternConnect
 
+### Author **SarahEvelynn Johnson**
+### Contact **SarahEvelynnJohnson@gmail.com**
+
 ## Summary of App
 This app allows for [5280 Startup Solutions, LLC](https://www.5280startupsolutions.co/) to keep track of their intern and internship applications. As the premier startup/internship matching company in Denver, it is difficult to keep track of what is happening with all of the companies and students while also running a consulting company.
 
