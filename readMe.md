@@ -22,6 +22,13 @@ This app allows for [5280 Startup Solutions, LLC](https://www.5280startupsolutio
 ###Other Resources
 * Link to Meetup to help people interested in startups have the resources needed to succeed.
 
+##Preview of App
+
+![Homepage and Matching Board](./assets/App.Screen.1)
+
+![Student and Company Forms](./assets/App.Screen.2)
+
+
 Links
 [Deployed Site](https://intern-connect.firebaseapp.com/)
 [Front-End Code](https://github.com/sarahevelynn/intern-connect-client)
