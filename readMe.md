@@ -24,9 +24,9 @@ This app allows for [5280 Startup Solutions, LLC](https://www.5280startupsolutio
 
 ##Preview of App
 
-![Homepage and Matching Board](assets/App.Screen.1)
+![Homepage and Matching Board](assets/App.Screen.1.png)
 
-![Student and Company Forms](assets/App.Screen.2)
+![Student and Company Forms](assets/App.Screen.2.png)
 
 
 Links
