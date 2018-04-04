@@ -6,6 +6,13 @@
 ## Summary of App
 This app allows for [5280 Startup Solutions, LLC](https://www.5280startupsolutions.co/) to keep track of their intern and internship applications. As the premier startup/internship matching company in Denver, it is difficult to keep track of what is happening with all of the companies and students while also running a consulting company.
 
+#### Installation instructions:
+- Run NPM install to download all of the package dependencies
+  - npm install
+- Install Cypress to run the tests
+  - npm install --save-dev cypress
+  - To run the tests run code: npx cypress open
+
 ### Student Resource
 * Form to fill out for internship
     * Personal contact information
