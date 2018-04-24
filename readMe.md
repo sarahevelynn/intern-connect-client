@@ -1,5 +1,4 @@
 # InternConnect
-
 ### Author **SarahEvelynn Johnson**
 ### Contact **SarahEvelynnJohnson@gmail.com**
 
