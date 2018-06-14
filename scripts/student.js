@@ -26,7 +26,7 @@ fetch(baseURL + "/students")
         options.value = i + 1;
         options.textContent = filterData[i];
         param.appendChild(options);
-      }
+      } 
     }
     filter(major, "major");
     filter(year, "year");
